@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
+
+// fonts
+$font-family-sans-serif: "Raleway", sans-serif !default;
+
+// colors
+$body-bg: white !default;
+$body-color: black !default;
+$link-color: #2C95D2 !default;
+$selection-bg: #e7ad52 !default;
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+// headings
+$presentation-heading-font: "Raleway", sans-serif;
+$presentation-heading-color: #2C95D2 !default;
+$presentation-heading-letter-spacing: -0.03em;
+
+// code blocks
+$code-block-border-color: rgba(233, 236, 239, 0.5) !default;
+
+/*-- scss:rules --*/
+
+/* Set background for all headers 1 # slides */
+
+.slide-background:first-child {
+  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/WIClogo.png);
+  background-repeat: no-repeat;
+  background-position: 4% 5%;
+  background-size: 300px;
+  background-color: #2C95D2 ;
+}
+
+.reveal p { 
+  font-size: 28px;
+  text-align: left;
+  text-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.reveal h1 {
+  text-align: left; 
+  font-size: 40px;
+  color: #fff;
+  padding-top: 200px;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
