@@ -17,15 +17,12 @@ $presentation-heading-font: "Raleway", sans-serif;
 $presentation-heading-color: #2C95D2 !default;
 $presentation-heading-letter-spacing: -0.03em;
 
-// code blocks
-$code-block-border-color: rgba(233, 236, 239, 0.5) !default;
-
 /*-- scss:rules --*/
 
 /* Set background for all headers 1 # slides */
 
 .slide-background:first-child {
-  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/WIClogo.png);
+  background-image: url(https://github.com/olayabucaro/WICslides/raw/main/libs/figures/WIClogo.png);
   background-repeat: no-repeat;
   background-position: 4% 5%;
   background-size: 300px;
@@ -52,3 +49,4 @@ $code-block-border-color: rgba(233, 236, 239, 0.5) !default;
   margin-bottom: 18px;
   font-weight: bold;
 }
+
