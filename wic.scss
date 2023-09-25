@@ -16,7 +16,6 @@ $input-panel-bg: rgba(233, 236, 239, 0.2) !default;
 $presentation-heading-font: "Raleway", sans-serif;
 $presentation-heading-color: #2C95D2 !default;
 $presentation-heading-letter-spacing: -0.03em;
-
 /*-- scss:rules --*/
 
 /* Set background for all headers 1 # slides */
@@ -24,29 +23,86 @@ $presentation-heading-letter-spacing: -0.03em;
 .slide-background:first-child {
   background-image: url(https://github.com/olayabucaro/WICslides/raw/main/libs/figures/WIClogo.png);
   background-repeat: no-repeat;
-  background-position: 4% 5%;
+  background-position: 4% 6%;
   background-size: 300px;
   background-color: #2C95D2 ;
 }
 
-.reveal p { 
-  font-size: 28px;
-  text-align: left;
-  text-shadow: none;
-  padding-top: 10px;
-  padding-bottom: 18px;
+
+/* Title field: Title font settings */
+.reveal h1.title {
+  color: white;
+  font-size: 2em;
+  text-align: left; /* Optional: center */
+  font-weight: bold;
+  margin-top: 10%; /* Distance between logo and title */
+  margin-bottom: 5%; /* Diastance to subtile field */
 }
+
+/* Author field: Author font settings */
+.reveal p.author {
+  color: white;
+  font-size: 1.1em;
+  text-align: left; /* Optional: center */
+  font-weight: 400;
+  margin-top: 1%; /* Distance between field lines */
+  margin-bottom: 3%;/* Diastance to date field */
+}
+
+/* Institute field: Affiliation font settings */
+.reveal p.institute {
+  color: white;
+  font-size: 0.5em;
+  text-align: left; /* Optional: center */
+  font-weight: 400;
+  margin-top: 3%; /* Distance between field lines */
+  margin-bottom: 10%;/* Diastance to date field */
+}
+
+/* Institute field: Affiliation font settings */
+.reveal p.date {
+  color: white;
+  font-size: 0.5em;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 3%; /* Distance between field lines */
+  margin-bottom: 10%;/* Diastance to date field */
+}
+
+.reveal p { 
+  color: black;
+}
+
+.reveal .slide aside { 
+  color: black;
+  font-size: 0.3em;
+  
+}
+
 
 .reveal h1 {
-  text-align: left; 
-  font-size: 40px;
-  color: #fff;
-  padding-top: 200px;
-  font-size: 40px;
-  text-align: left;
-  text-shadow: none;
-  padding-bottom: 18px;
-  margin-bottom: 18px;
+  color: #2C95D2; /* WIC blue */
   font-weight: bold;
+  font-size: 3em;
+  text-align: left; /* Optional: center */
 }
 
+ul{
+  font-size: 1em;
+  padding-left: 2%;
+}
+
+/* Bullet point style */
+ul li::marker {
+  color: #2C95D2; /* WIC blue */
+}
+
+
+/* Bullet point style */
+.has-dark-background ul li::marker {
+  color: white;
+}
+
+section.has-dark-background a {
+  color: white;
+}
